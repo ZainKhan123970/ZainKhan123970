@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 800" preserveAspectRatio="xMidYMid meet">
+<defs>
+<linearGradient id="im-line" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+<linearGradient id="im-holo" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="im-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="im-bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0.45"/></linearGradient>
+<pattern id="im-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#fff" fill-opacity="0.06"/></pattern>
+<clipPath id="im-cardclip"><rect x="0" y="0" width="190" height="270" rx="14"/></clipPath>
+<style>
+.im-f{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.im-m{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
+.im-swing{transform-origin:0 0;animation:im-sw 5s ease-in-out infinite}
+@keyframes im-sw{0%,100%{transform:rotate(4deg)}50%{transform:rotate(-4deg)}}
+.im-bar{transform-box:fill-box;transform-origin:bottom;animation:im-gr 1.6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes im-gr{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.im-pulse{animation:im-pu 1.8s ease-in-out infinite}
+@keyframes im-pu{0%,100%{opacity:1}50%{opacity:.25}}
+</style>
+</defs>
+<rect width="420" height="800" rx="24" fill="#0d0e16"/>
+<rect width="420" height="800" rx="24" fill="url(#im-dots)"/>
+<rect x="1" y="1" width="418" height="798" rx="23" fill="none" stroke="url(#im-line)" stroke-opacity="0.65"/>
+
+<!-- badge -->
+<g transform="translate(210,0)">
+<g class="im-swing">
+<path d="M-26,0 L-8,70 M26,0 L8,70" stroke="#a78bfa" stroke-width="7" stroke-linecap="round"/>
+<rect x="-14" y="64" width="28" height="20" rx="6" fill="url(#im-gold)"/>
+<g transform="translate(-95,82)">
+<rect width="190" height="270" rx="14" fill="#151726" stroke="url(#im-line)" stroke-width="2"/>
+<g clip-path="url(#im-cardclip)">
+<rect x="0" y="0" width="190" height="62" fill="url(#im-line)" fill-opacity="0.25"/>
+<rect x="-80" y="0" width="60" height="270" fill="url(#im-holo)" transform="skewX(-18)">
+<animate attributeName="x" values="-80;260;260" keyTimes="0;0.5;1" dur="3.4s" repeatCount="indefinite"/>
+</rect>
+</g>
+<text x="95" y="26" text-anchor="middle" font-size="11" class="im-m" fill="#cbd5e1">CANDIDATE ID</text>
+<circle cx="95" cy="112" r="40" fill="#0d0e16" stroke="url(#im-line)" stroke-width="3"/>
+<text x="95" y="124" text-anchor="middle" font-size="34" font-weight="800" class="im-f" fill="#22d3ee">ZK</text>
+<text x="95" y="180" text-anchor="middle" font-size="17" font-weight="700" class="im-f" fill="#f1f5f9">Zain ul Abideen</text>
+<text x="95" y="200" text-anchor="middle" font-size="12" class="im-f" fill="#94a3b8">Full-Stack Developer</text>
+<rect x="27" y="210" width="136" height="24" rx="12" fill="#34d399" fill-opacity="0.15" stroke="#34d399" stroke-opacity="0.6"/>
+<circle class="im-pulse" cx="44" cy="222" r="4" fill="#34d399"/>
+<text x="56" y="226" font-size="10.5" font-weight="700" letter-spacing="0.5" class="im-f" fill="#6ee7b7">OPEN TO WORK</text>
+<g transform="translate(40,243)" fill="#94a3b8"><rect width="2" height="14"/><rect x="5" width="4" height="14"/><rect x="12" width="2" height="14"/><rect x="17" width="6" height="14"/><rect x="26" width="2" height="14"/><rect x="31" width="4" height="14"/><rect x="38" width="2" height="14"/><rect x="43" width="5" height="14"/><rect x="51" width="2" height="14"/><rect x="56" width="4" height="14"/><rect x="63" width="3" height="14"/><rect x="69" width="2" height="14"/><rect x="74" width="4" height="14"/></g>
+<rect x="147" y="14" width="26" height="18" rx="4" fill="url(#im-gold)"/>
+</g>
+</g>
+</g>
+
+<!-- KPI tiles -->
+<g class="im-f">
+<text x="16" y="394" font-size="12" class="im-m" fill="#22d3ee">// dashboard</text>
+<rect x="16" y="404" width="124" height="78" rx="14" fill="#151726" stroke="#22d3ee" stroke-opacity="0.4"/>
+<text x="28" y="428" font-size="11" fill="#94a3b8">Projects</text>
+<text x="28" y="468" font-size="32" font-weight="800" fill="#f1f5f9">50<tspan fill="#22d3ee">+</tspan></text>
+<rect x="148" y="404" width="124" height="78" rx="14" fill="#151726" stroke="#a78bfa" stroke-opacity="0.4"/>
+<text x="160" y="428" font-size="11" fill="#94a3b8">Clients</text>
+<text x="160" y="468" font-size="32" font-weight="800" fill="#f1f5f9">30<tspan fill="#a78bfa">+</tspan></text>
+<rect x="280" y="404" width="124" height="78" rx="14" fill="#151726" stroke="#f472b6" stroke-opacity="0.4"/>
+<text x="292" y="428" font-size="11" fill="#94a3b8">Disciplines</text>
+<text x="292" y="468" font-size="32" font-weight="800" fill="#f1f5f9">6<tspan fill="#f472b6">+</tspan></text>
+
+<!-- chart -->
+<g transform="translate(16,498)">
+<rect width="388" height="150" rx="14" fill="#151726" stroke="#ffffff" stroke-opacity="0.08"/>
+<text x="16" y="24" font-size="12" fill="#94a3b8">Work by area (share of projects)</text>
+<g transform="translate(16,52)">
+<g stroke="#ffffff" stroke-opacity="0.07"><line x1="0" y1="0" x2="356" y2="0"/><line x1="0" y1="35" x2="356" y2="35"/><line x1="0" y1="70" x2="356" y2="70"/></g>
+<rect class="im-bar" x="12" y="0" width="46" height="70" rx="5" fill="url(#im-bar)" style="animation-delay:.1s"/>
+<rect class="im-bar" x="86" y="31" width="46" height="39" rx="5" fill="url(#im-bar)" style="animation-delay:.25s"/>
+<rect class="im-bar" x="160" y="47" width="46" height="23" rx="5" fill="url(#im-bar)" style="animation-delay:.4s"/>
+<rect class="im-bar" x="234" y="54" width="46" height="16" rx="5" fill="url(#im-bar)" style="animation-delay:.55s"/>
+<rect class="im-bar" x="308" y="62" width="40" height="8" rx="5" fill="url(#im-bar)" style="animation-delay:.7s"/>
+<g font-size="10" fill="#94a3b8" text-anchor="middle"><text x="35" y="88">AI</text><text x="109" y="88">Web</text><text x="183" y="88">UI/UX</text><text x="257" y="88">Mobile</text><text x="328" y="88">Other</text></g>
+<g font-size="11" font-weight="700" fill="#e2e8f0" text-anchor="middle"><text x="35" y="-6">45%</text><text x="109" y="25">25%</text><text x="183" y="41">15%</text><text x="257" y="48">10%</text><text x="328" y="56">5%</text></g>
+</g>
+</g>
+
+<!-- now -->
+<g transform="translate(16,660)">
+<rect width="388" height="124" rx="14" fill="#151726" stroke="#ffffff" stroke-opacity="0.08"/>
+<text x="16" y="24" font-size="12" fill="#94a3b8">Right now</text>
+<g font-size="13" fill="#e2e8f0">
+<circle class="im-pulse" cx="24" cy="48" r="4" fill="#34d399"/><text x="38" y="52">Looking for a dev role</text>
+<circle cx="24" cy="70" r="4" fill="#22d3ee"/><text x="38" y="74">Building AI agents</text>
+<circle cx="24" cy="92" r="4" fill="#a78bfa"/><text x="38" y="96">Polishing UI/UX skills</text>
+<circle cx="24" cy="114" r="4" fill="#f472b6"/><text x="38" y="118">Based in Karachi, PK</text>
+</g>
+</g>
+</g>
+</svg>

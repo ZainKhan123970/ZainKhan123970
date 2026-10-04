@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+<defs>
+<linearGradient id="hg-line" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+<linearGradient id="hg-text" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+<pattern id="hg-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#ffffff" fill-opacity="0.06"/></pattern>
+<clipPath id="hg-card"><rect x="2" y="2" width="896" height="356" rx="22"/></clipPath>
+<style>
+.hg-f{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.hg-m{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
+.hg-name{animation:hg-rise 1s .3s both}
+.hg-pill{animation:hg-rise 1s .6s both}
+.hg-pitch{animation:hg-rise 1s .9s both}
+.hg-meta{animation:hg-rise 1s 1.2s both}
+@keyframes hg-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.hg-blink{animation:hg-bl 1s steps(2,end) infinite}
+@keyframes hg-bl{50%{opacity:0}}
+.hg-pulse{animation:hg-pu 1.8s ease-in-out infinite}
+@keyframes hg-pu{0%,100%{opacity:1}50%{opacity:.25}}
+.hg-role{opacity:0}
+.hg-r1{animation:hg-cyc 9s infinite 0s}
+.hg-r2{animation:hg-cyc 9s infinite 3s}
+.hg-r3{animation:hg-cyc 9s infinite 6s}
+@keyframes hg-cyc{0%{opacity:0;transform:translateY(8px)}6%,30%{opacity:1;transform:translateY(0)}36%,100%{opacity:0;transform:translateY(-8px)}}
+.hg-type{clip-path:inset(0 100% 0 0);animation:hg-ty 2.2s steps(14,end) .5s forwards}
+@keyframes hg-ty{to{clip-path:inset(0 0 0 0)}}
+</style>
+</defs>
+<rect width="900" height="360" rx="24" fill="#0d0e16"/>
+<g clip-path="url(#hg-card)">
+<rect width="900" height="360" fill="url(#hg-dots)"/>
+<circle cx="760" cy="40" r="170" fill="#a78bfa" fill-opacity="0.13"><animate attributeName="cx" values="760;720;760" dur="9s" repeatCount="indefinite"/></circle>
+<circle cx="90" cy="330" r="140" fill="#22d3ee" fill-opacity="0.08"><animate attributeName="cy" values="330;300;330" dur="8s" repeatCount="indefinite"/></circle>
+</g>
+<rect x="1.5" y="1.5" width="897" height="357" rx="23" fill="none" stroke="url(#hg-line)" stroke-opacity="0.7" stroke-width="1.5"/>
+
+<!-- left: text -->
+<g class="hg-f">
+<g class="hg-pill">
+<rect x="48" y="40" width="168" height="30" rx="15" fill="#22d3ee" fill-opacity="0.12" stroke="#22d3ee" stroke-opacity="0.5"/>
+<circle class="hg-pulse" cx="68" cy="55" r="5" fill="#34d399"/>
+<text x="82" y="60" font-size="13" font-weight="600" fill="#a5f3fc">Open to work</text>
+</g>
+<text class="hg-m hg-type" x="48" y="118" font-size="22" fill="#94a3b8">Hi there, I'm</text>
+<text class="hg-name" x="48" y="172" font-size="54" font-weight="800" fill="url(#hg-text)">Zain ul Abideen</text>
+<g transform="translate(48,214)">
+<text class="hg-role hg-r1" font-size="22" font-weight="600" fill="#f1f5f9">Full-Stack Developer</text>
+<text class="hg-role hg-r2" font-size="22" font-weight="600" fill="#f1f5f9">UI/UX Designer</text>
+<text class="hg-role hg-r3" font-size="22" font-weight="600" fill="#f1f5f9">AI Builder</text>
+<rect class="hg-blink" x="250" y="-20" width="3" height="26" fill="#f472b6"/>
+</g>
+<g class="hg-pitch">
+<text x="48" y="256" font-size="15" fill="#94a3b8">I design and build web apps, mobile apps and AI-powered tools,</text>
+<text x="48" y="278" font-size="15" fill="#94a3b8">and I'm looking for a team where I can ship real products.</text>
+</g>
+<g class="hg-meta hg-m" font-size="13" fill="#cbd5e1">
+<text x="48" y="320">&#128205; Karachi, Pakistan</text>
+<text x="230" y="320">&#9733; 50+ projects</text>
+<text x="370" y="320">&#9993; open to offers</text>
+</g>
+</g>
+
+<!-- right: camera viewfinder with animated monogram -->
+<g transform="translate(600,50)">
+<rect x="0" y="0" width="250" height="260" rx="14" fill="#151726"/>
+<g stroke="#22d3ee" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="40" stroke-dashoffset="40">
+<path d="M0 34V0H34"><animate attributeName="stroke-dashoffset" from="40" to="0" dur="0.8s" begin="0.2s" fill="freeze"/></path>
+<path d="M216 0H250V34"><animate attributeName="stroke-dashoffset" from="40" to="0" dur="0.8s" begin="0.4s" fill="freeze"/></path>
+<path d="M250 226V260H216"><animate attributeName="stroke-dashoffset" from="40" to="0" dur="0.8s" begin="0.6s" fill="freeze"/></path>
+<path d="M34 260H0V226"><animate attributeName="stroke-dashoffset" from="40" to="0" dur="0.8s" begin="0.8s" fill="freeze"/></path>
+</g>
+<circle cx="125" cy="110" r="62" fill="none" stroke="url(#hg-line)" stroke-width="3">
+<animateTransform attributeName="transform" type="rotate" from="0 125 110" to="360 125 110" dur="14s" repeatCount="indefinite"/>
+</circle>
+<circle cx="125" cy="110" r="52" fill="#0d0e16"/>
+<text x="125" y="126" text-anchor="middle" font-size="46" font-weight="800" class="hg-f" fill="url(#hg-text)">ZK</text>
+<text x="125" y="214" text-anchor="middle" font-size="13" class="hg-m" fill="#94a3b8">Zain ul Abideen</text>
+<text x="125" y="234" text-anchor="middle" font-size="11" class="hg-m" fill="#64748b">Dev &#183; Design &#183; AI</text>
+<circle class="hg-pulse" cx="18" cy="18" r="5" fill="#ef4444"/>
+<text x="30" y="22" font-size="11" class="hg-m" fill="#fca5a5">REC</text>
+<rect x="0" y="0" width="250" height="3" fill="#22d3ee" fill-opacity="0.5">
+<animate attributeName="y" values="0;257;0" dur="5s" repeatCount="indefinite"/>
+</rect>
+</g>
+</svg>
